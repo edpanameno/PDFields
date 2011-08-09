@@ -24,7 +24,7 @@ namespace PDFields
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             openFile = new OpenFileDialog();
-            //openFile.Filter = "PDF Files (*.pdf)";
+            openFile.Filter = "PDF Files|*.pdf";
             openFile.Title = "Select PDF File to Scan";
 
             if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
