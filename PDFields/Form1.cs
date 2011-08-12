@@ -44,9 +44,9 @@ namespace PDFields
                 return;
             }
 
-            foreach (string key in acroFields.Fields.Keys)
+            foreach (var field in acroFields.Fields)
             {
-                this.txtFields.Text += key + Environment.NewLine;
+                this.txtFields.Text += field.Key + Environment.NewLine;
             }
 
             reader.Close();
